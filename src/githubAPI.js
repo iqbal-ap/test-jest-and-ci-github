@@ -6,13 +6,14 @@ module.exports = {
 	postGithubCommitStatus: async (repository, sha) => {
 		const url = `https://api.github.com/repos/${repository}/statuses/${sha}`;
 		const { lines, statements, functions, branches } = codeCoverage.total;
+		
+		console.log(`test env vars: LALALA=${process.env.LALALA}`)
 
 		if (!process.env.TOKEN_GITHUB) {
 			console.log('env vars \"TOKEN_GITHUB\" not found');
 			process.exit(1);
 		}
 
-		console.log(`test env vars: LALALA=${process.env.LALALA}`)
 		try {
 			const res = await fetch(url, {
 				method: 'POST',
