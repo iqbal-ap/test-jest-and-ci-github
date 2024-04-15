@@ -10,6 +10,8 @@ jobs:
       matrix:
         node-version: [18.x]
     
+    environment: env
+    
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
@@ -23,5 +25,5 @@ jobs:
       - name: set commit status
         run: |
           echo "LALALA=PO" >> .env
-          echo "TOKEN_GITHUB=" >> .env
+          echo "TOKEN_GITHUB=${{ secrets.TOKEN_GITHUB }}" >> .env
           node bin/set-github-status --github-repository=${{ github.repository }} --github-sha=${{ github.event.after }}
