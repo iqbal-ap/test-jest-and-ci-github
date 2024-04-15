@@ -3,8 +3,8 @@ const string = require('joi/lib/types/string');
 const { postGithubCommitStatus } = require('../src/githubAPI')
 
 const args = arg({
-    '--github-repository': string,
-    '--github-sha': string,
+    '--github-repository': String,
+    '--github-sha': String,
 });
 
 async function setGithubStatus(options) {
