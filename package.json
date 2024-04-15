@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "set-github-status": "bin/SetGithubStatus.js"
+  },
   "scripts": {
     "test": "jest --config=./config/jest.config.js"
   },
