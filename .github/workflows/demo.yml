@@ -23,5 +23,5 @@ jobs:
       - name: set commit status
         run: |
           echo "LALALA=PO" >> .env
-          echo "TOKEN_GITHUB=0" >> .env
+          echo "TOKEN_GITHUB=" >> .env
           node bin/set-github-status --github-repository=${{ github.repository }} --github-sha=${{ github.event.after }}
