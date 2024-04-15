@@ -21,16 +21,15 @@ module.exports = {
 					Authorization: `Bearer ${process.env.TOKEN_GITHUB}`,
 					Accept: 'application/vnd.github+json',
 				},
-				body: {
+				body: JSON.stringify({
 					context: 'code-coverage',
 					state: 'success',
-					description: 'yeya'
-					// description: `Coverage: 
-          //               ${lines.pct}% of lines
-          //               ${statements.pct}% of statements
-          //               ${functions.pct}% of functions
-          //               ${branches.pct}% of branches`
-				}
+					description: `Coverage: 
+                        ${lines.pct}% of lines
+                        ${statements.pct}% of statements
+                        ${functions.pct}% of functions
+                        ${branches.pct}% of branches`
+				}),
 			})
 			console.log('Successfully create status')
 			console.log('response:', res)
