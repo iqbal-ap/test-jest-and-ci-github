@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "set-github-status": "./bin/SetGithubStatus.js"
+    "set-github-status": "bin/set-github-status.js"
   },
   "files": [
     "bin",
