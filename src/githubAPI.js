@@ -18,7 +18,8 @@ module.exports = {
 			const res = await fetch(url, {
 				method: 'POST',
 				headers: {
-					Authorization: `Bearer ${process.env.TOKEN_GITHUB}`
+					Authorization: `Bearer ${process.env.TOKEN_GITHUB}`,
+					Accept: 'application/vnd.github+json',
 				},
 				body: {
 					context: 'code-coverage',
