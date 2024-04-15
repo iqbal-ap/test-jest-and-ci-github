@@ -22,7 +22,7 @@ module.exports = {
 				},
 				body: {
 					context: 'code-coverage',
-					state: 'Success',
+					state: 'success',
 					description: `Coverage: 
                         ${lines.pct}% of lines
                         ${statements.pct}% of statements
