@@ -24,6 +24,7 @@ module.exports = {
 				}
 			})
 			console.log('Successfully create status')
+			console.log('response:', res)
 		} catch (e) {
 			throw e;
 		}
