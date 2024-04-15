@@ -25,11 +25,12 @@ module.exports = {
 				body: {
 					context: 'code-coverage',
 					state: 'success',
-					description: `Coverage: 
-                        ${lines.pct}% of lines
-                        ${statements.pct}% of statements
-                        ${functions.pct}% of functions
-                        ${branches.pct}% of branches`
+					description: 'yeay'
+					// description: `Coverage: 
+          //               ${lines.pct}% of lines
+          //               ${statements.pct}% of statements
+          //               ${functions.pct}% of functions
+          //               ${branches.pct}% of branches`
 				},
 			})
 			console.log('Successfully create status')
