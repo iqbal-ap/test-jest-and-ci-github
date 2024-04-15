@@ -22,5 +22,6 @@ jobs:
         run: npm test
       - name: set commit status
         run: |
+          echo "LALALA=PO" >> "$GITHUB_ENV"
           echo "TOKEN_GITHUB=${{ secrets.TOKEN_GITHUB }}" >> "$GITHUB_ENV"
           node bin/set-github-status --github-repository=${{ github.repository }} --github-sha=${{ github.event.after }}

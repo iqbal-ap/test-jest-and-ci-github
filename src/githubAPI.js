@@ -7,6 +7,12 @@ module.exports = {
 		const url = `https://api.github.com/repos/${repository}/statuses/${sha}`;
 		const { lines, statements, functions, branches } = codeCoverage.total;
 
+		if (!process.env.TOKEN_GITHUB) {
+			console.log('env vars \"TOKEN_GITHUB\" not found');
+			process.exit(1);
+		}
+
+		console.log(`test env vars: LALALA=${process.env.LALALA}`)
 		try {
 			const res = await fetch(url, {
 				method: 'POST',
