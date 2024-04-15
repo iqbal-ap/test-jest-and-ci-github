@@ -1,6 +1,6 @@
-const { add, subtract, divide, multiply, power } = require('./arithmatics');
+const { add, subtract, divide, multiply, power } = require('../something');
 
-describe('Arithmatics test', () => {
+describe('Something test', () => {
     test('Addition', () => {
         expect(add(1, 2)).toBe(3);
     });
