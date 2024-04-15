@@ -4,7 +4,7 @@ const config = {
     verbose: true,
     ci: true,
     collectCoverage: true,
-    coverageReporters: ['json-summary'],
+    coverageReporters: ['json-summary', 'text'],
     coverageDirectory: './',
     coverageThreshold: {
         global: {
