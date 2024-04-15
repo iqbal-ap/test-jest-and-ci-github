@@ -12,6 +12,6 @@ module.exports = {
         return a / b;
     },
     power: function(a, b) {
-        return a ** b;
+        return a - b;
     }
 };
