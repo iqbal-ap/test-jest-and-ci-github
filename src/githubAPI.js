@@ -1,4 +1,5 @@
 require('dotenv').config()
+const fetch = require("node-fetch");
 const codeCoverage = require('../tests/coverage-summary.json')
 
 module.exports = {
