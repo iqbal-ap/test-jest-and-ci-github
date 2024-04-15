@@ -21,6 +21,6 @@ jobs:
       - name: tests
         run: npm test
       - name: set commit status
-        run: node bin/set-github-status --github-repository=${{ github.repository }} --github-sha=${{ github.sha }}
+        run: node bin/set-github-status --github-repository=${{ github.repository }} --github-sha=${{ github.event.after }}
         env:
           TOKEN_GITHUB: ${{ secrets.TOKEN_GITHUB }}
