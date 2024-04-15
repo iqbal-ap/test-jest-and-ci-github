@@ -1,4 +1,4 @@
-const { add, subtract, divide, multiply, power } = require('./arithmatics');
+const { add, subtract, divide, multiply, power } = require('../arithmatics');
 
 describe('Arithmatics test', () => {
     test('Addition', () => {
