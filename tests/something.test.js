@@ -1,4 +1,4 @@
-const { add, subtract, divide, multiply, power } = require('../something');
+const { add, subtract, divide, multiply, power } = require('../src/something');
 
 describe('Something test', () => {
     test('Addition', () => {
