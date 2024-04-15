@@ -20,6 +20,7 @@ module.exports = {
 				headers: {
 					Authorization: `Bearer ${process.env.TOKEN_GITHUB}`,
 					Accept: 'application/vnd.github+json',
+					"Content-Type": 'application/json'
 				},
 				body: JSON.stringify({
 					context: 'code-coverage',
