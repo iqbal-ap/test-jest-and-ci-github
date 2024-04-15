@@ -1,0 +1,23 @@
+{
+  "name": "test-jest-and-ci-github",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iqbal-ap/test-jest-and-ci-github.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iqbal-ap/test-jest-and-ci-github/issues"
+  },
+  "homepage": "https://github.com/iqbal-ap/test-jest-and-ci-github#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
