@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 const arg = require('arg');
-const string = require('joi/lib/types/string');
 const { postGithubCommitStatus } = require('../src/githubAPI')
 
 const args = arg({
