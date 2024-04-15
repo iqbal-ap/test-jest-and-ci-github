@@ -22,7 +22,7 @@ module.exports = {
 					Accept: 'application/vnd.github+json',
 					"Content-Type": 'application/json'
 				},
-				body: JSON.stringify({
+				body: {
 					context: 'code-coverage',
 					state: 'success',
 					description: `Coverage: 
@@ -30,7 +30,7 @@ module.exports = {
                         ${statements.pct}% of statements
                         ${functions.pct}% of functions
                         ${branches.pct}% of branches`
-				}),
+				},
 			})
 			console.log('Successfully create status')
 			console.log('response:', res)
